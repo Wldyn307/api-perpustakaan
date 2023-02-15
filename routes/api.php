@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', [PostC::class, 'index']);
+Route::get('/posts/{id}', [PostC::class, 'detail']);
